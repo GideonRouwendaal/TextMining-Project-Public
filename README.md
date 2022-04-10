@@ -36,4 +36,4 @@ flask run
 8. Open the server on your local host
 
 ## Demo
-A demo of the webpage can be found on [YouTube](https://youtu.be/EsPP_s-Ag24)
+A demo of the webpage can be found on [YouTube](https://youtu.be/EsPP_s-Ag24).
