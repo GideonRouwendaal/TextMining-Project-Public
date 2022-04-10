@@ -51,9 +51,9 @@ training_args = TrainingArguments(
     num_train_epochs=num_train_epochs,
     weight_decay=0.01,
     gradient_checkpointing=True,
-    fp16=True,
     optim="adafactor",
-    report_to="none"
+    report_to="none",
+    no_cuda = True
 )
 #Set the huggingface trainer
 trainer = Trainer(

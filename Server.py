@@ -35,7 +35,7 @@ def process_tweet():
     # Get the negative words of the tweet
     _, negative_words, tokenized_sentence = vader_analysis_tweet(vader_model, tweet)
     #Load the model pipeline
-    pipe = pipeline('text-classification',model_path, return_all_scores=True, device = 0)
+    pipe = pipeline('text-classification',model_path, return_all_scores=True)
     #Get the model predictions, returns a list with label and probability. As the model has a max of 128 tokens, cut the rest.
     if len(tweet) > 128:
         tweet = tweet[:128]

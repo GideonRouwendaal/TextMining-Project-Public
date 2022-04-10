@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 #Parameters
-training_set_test = True
+training_set_test = False
 testing_set_test = True
 
 #Set seeds for reproducability, missing NP and Tensorflow seeds
@@ -24,7 +24,7 @@ tweets.label = pd.Categorical(tweets.label)
 tweets['label'] = tweets.label.cat.codes
 print("Loading model")
 model_path = 'Models/Transformer'
-pipe = pipeline('text-classification',model_path, return_all_scores=True, device = 0)
+pipe = pipeline('text-classification',model_path, return_all_scores=True)
 
 #Split the dataset into testing and training sets
 print("Splitting data to obtain a train and test set")

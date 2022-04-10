@@ -4,16 +4,16 @@
 The main branch utilizes huggingface and transformers as a backend for learning. It uses [BERTweet](https://github.com/VinAIResearch/BERTweet) as the transformer model. This model was finetuned using [this](https://www.kaggle.com/andrewmvd/cyberbullying-classification) dataset from Kaggle. This repository is copied from a private repository and does not contain all past pushes and branches.
 
 ## How to run
-**Attention: the model in this branch can only be run on Nvidia GPU's with CUDA installed, for a CPU only approach please see the [CPU Branch](../../tree/Transformer-CPU).**
+**Attention: this branch is enables you to fine tune the model on CPU, this will take a very long time. If available please use a Nvidia CUDA gpu and the [main branch](/../../tree/main)**
 
 1. Install all the required python packages (recommended to do this in a separate conda environment):
 ```
 pip install -r requirements.txt
 ```
-2. Install the [torch package](https://pytorch.org/get-started/locally/) for gpu's
+2. Install the [torch package](https://pytorch.org/get-started/locally/) for cpu
 ```
 See the torch website (linked above) for the correct pip command. 
-Version used for this project is 1.11.0+cu113.
+Version used for this project is 1.11.0.
 ```
 3. Download the [kaggle dataset](https://www.kaggle.com/andrewmvd/cyberbullying-classification) and put the csv in the root folder of this project
 
@@ -21,7 +21,7 @@ Version used for this project is 1.11.0+cu113.
 ```
 python data_cleanup.py
 ```
-5. Run transformers.py to update the transformers model, finetuning the model takes about 2.6GB of video memory
+5. Run transformers.py to update the transformers model
 ```
 python transformers.py
 ```
