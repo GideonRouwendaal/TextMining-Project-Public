@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+authors:
+  - family-names: Rouwendaal
+    given-names: Gideon
+  - family-names: Brandt Cortius
+    given-names: Tim
+  - family-names: Roopram
+    given-names: Tara
+  - family-names: De Jong
+    given-names: Karen
+title: "Text Mining Project Group 5"
+version: 1.0.0
+date-released: 2022-04-10
