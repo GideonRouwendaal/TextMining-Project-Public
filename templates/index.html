@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tweet Detection</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/script.js')}}"></script>
+  <link rel="icon" type="image/png" href="/static/favicon/favicon_ctd.png">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="logo">
+      <i class="material-icons" style="font-size:80px; color:white ">youtube_searched_for</i>
+      <div class="header">
+        <h1>Cyberbully Tweet Detector</h1>
+      </div>
+    </div>
+    <div class="white_box">
+      <div class="tweet_box">
+        <form class="input">
+          <div class="tweet_text">
+            <textarea id="tweet_text_box" name="tweet" style="font-size: 13pt" placeholder="Type your tweet here..."
+              maxlength="280"></textarea>
+          </div>
+          <div class="post_button">
+            <a href=# id=review type="button"><button>Post Tweet</button></a>
+          </div>
+        </form>
+          <div class = "loading">
+            <p>Processing tweet, please wait</p>
+            <div class="loading_icon"><div class="loading_icon_2">
+              <div style='left:10.605px;top:10.605px;animation-delay:0s'></div><div style='left:37.875px;top:10.605px;animation-delay:0.24038461538461536s'></div><div style='left:65.145px;top:10.605px;animation-delay:0.4807692307692307s'></div><div style='left:10.605px;top:37.875px;animation-delay:1.6826923076923077s'></div><div style='left:65.145px;top:37.875px;animation-delay:0.7211538461538461s'></div><div style='left:10.605px;top:65.145px;animation-delay:1.4423076923076923s'></div><div style='left:37.875px;top:65.145px;animation-delay:1.2019230769230769s'></div><div style='left:65.145px;top:65.145px;animation-delay:0.9615384615384615s'></div>
+            </div></div>
+          </div>
+          <p id="warning-message"></p>
+        
+        <div>
+          <div id="reviewed_tweet_text">
+            <p>
+            </p>
+          </div>
+          <div id="reviewed_tweet_prob">
+            <p>
+            </p>
+          </div>
+          <div id="reviewed_tweet_buttons">
+            <p>
+            </p>
+          </div>
+        </div>
+        <div class="my_tweets">
+          <h2>My Tweets</h2>
+        </div>
+        <div id="tweet_start">
+        </div>
+        <div>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <footer>
+      <div>
+        <div>
+          <p><em>Disclaimer: although CTD strives for the most accurate predictions, we do not make any warranties about
+              the completeness, reliability and accuracy of these predictions. CTD is an experimental project operated
+              for academic purposes only. </em> </p>
+        </div>
+      </div>
+    </footer>
+    <br>
+  </div>
+
+</body>
+
+</html>

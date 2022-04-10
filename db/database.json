@@ -1,0 +1,26 @@
+[
+   {
+      "tweet": "I am going to find out who you are & you are going to regret it",
+      "pred_class": "Not Cyberbullying",
+      "prob": 58.12,
+      "tweet_html_code": "I am going to find out who you are & you are going to regret it"
+   },
+   {
+      "tweet": " I love turtles",
+      "pred_class": "other type of cyberbullying",
+      "prob": 79.79,
+      "tweet_html_code": "I love turtles"
+   },
+   {
+      "tweet": "You did a great job! :)",
+      "pred_class": "Not Cyberbullying",
+      "prob": 90.75,
+      "tweet_html_code": "You did a great job! :)"
+   },
+   {
+      "tweet": "You are a bitch",
+      "pred_class": "gender",
+      "prob": 95.68,
+      "tweet_html_code": "You are a <span style=\"color: #ff0000\">bitch</span>"
+   }
+]
