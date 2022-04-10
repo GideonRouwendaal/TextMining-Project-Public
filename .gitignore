@@ -1,0 +1,11 @@
+Models/
+__pycache__/
+instance/
+.vscode/
+results/
+cyberbullying_tweets.csv
+cyberbullying_tweets(good).csv
+Class_Distribution.png
+Tweet_Length_Distribution.png
+test_tweets.csv
+temp.py
